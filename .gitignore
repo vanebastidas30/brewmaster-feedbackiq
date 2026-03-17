@@ -1,0 +1,15 @@
+# entorno virtual
+venv/
+
+# python
+__pycache__/
+*.pyc
+
+# variables sensibles
+.env
+
+# outputs
+alerts_log.json
+
+# sistema
+.DS_Store
