@@ -52,3 +52,21 @@ def analysis_prompt(text, rating=None):
         Rating del cliente: {rating_context}
         """
     return prompt
+
+def summary_prompt(total, sentiment, top_locations, problem_locations, categories):
+
+    return f"""Eres un analista senior de negocio para una cadena de cafeterías.
+    Genera un resumen ejecutivo claro y profesional (máx 120 palabras)
+    basado en estos datos:
+
+    Total de reseñas: {total}
+    Distribución de sentimiento: {sentiment}
+    Mejores locales: {top_locations}
+    Locales con más problemas: {problem_locations}
+    Categorías más mencionadas:b{categories}
+
+    El resumen debe:
+    - Ser claro y accionable
+    - Destacar problemas importantes 
+    - Identificar oportunidades
+    - Tener tono ejecutivo"""

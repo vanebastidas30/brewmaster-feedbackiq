@@ -37,7 +37,8 @@ brewmaster_feedbackiq
             extractors.py
             transformers.py
             pipeline.py
-    
+        reports
+            weekly_report.py
     test  
     
     run.py
